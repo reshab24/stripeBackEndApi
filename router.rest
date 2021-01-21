@@ -1,0 +1,59 @@
+GET http://localhost:3000/subscribers
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name":"zandu",
+    "subscribedToChannel":"bazu"
+}
+
+###
+POST  http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "name":"Rishab Vaisdf",
+    "mobileNumber": "77dsf44834s8632",
+    "password": "abcdefg",
+    "confirmPassword": "123",
+    "email":"reshab242sdfd2@gmail.com",
+    "gender":"male",
+    "height":"5 fts",
+    "cast":"hindu",
+    "education":"BCON",
+    "profession":"web developer",
+    "address":"Hno:126 jao dev waddo nachinola Goa",
+    "income":"25000",
+    "images":[
+        {
+        "filename":"photo'-'1593960637435.png",
+        "url":"http://localhost:3000/images/5f01e8bda224b52d48d35a8f"
+        }
+        ]
+}
+
+###
+POST http://localhost:3000/users?user="true"
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmlzaGFiMjQiLCJpYXQiOjE1ODk5MDMxNzB9.t6sELc5lZKIuRd_S-FCFYSMcNzKPGYAzn3ovhmGcAuM
+
+{
+    "name":"kjhhgfashgddgdff",
+    "mobileNumber": "mbhjddfgsv5454",
+    "password": "1234567sgdfg"
+}
+###
+GET  http://localhost:3000/users?name="Rishab"
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmlzaGFiMjQiLCJpYXQiOjE1ODk5MDMxNzB9.t6sELc5lZKIuRd_S-FCFYSMcNzKPGYAzn3ovhmGcAuM
+
+###
+PATCH http://localhost:3000/users/5ec2ce336f666833d0caafec
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmlzaGFiMjQiLCJpYXQiOjE1ODk5MDMxNzB9.t6sELc5lZKIuRd_S-FCFYSMcNzKPGYAzn3ovhmGcAuM
+
+{
+    "name":"Emiway",
+}
